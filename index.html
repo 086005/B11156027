@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>期末網頁</title>
+<style>
+    footer{
+        position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* 更改您想要的背景顏色 */
+    color: #ffffff; /* 更改您想要的文字顏色 */
+    padding: 20px;
+    text-align: center;
+    }
+    img{
+        height: 450px;
+    }
+    @media (min-width: 992px) { 
+    .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar-nav .nav-item {
+        width: auto;
+    }
+    .navbar-nav .nav-link {
+        text-align: left;
+    }
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        float: none;
+        width: auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    }
+    @media (min-width: 768px) and (max-width: 992px) { 
+        .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    }
+    .navbar-nav .nav-item {
+    width: 100%;
+    }
+    .navbar-nav .nav-link {
+    text-align: center;
+    }
+    .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    }
+    }
+    .mycol{
+        height: 20px;
+    }
+</style>
+</head>
+
+<!-- <div class="container">
+    <div class="row gx-5 ">
+        <div class="col-9">
+            <div class="text-light bg-primary">控制水平</div>
+        </div>
+        <div class="col-3">
+            <div class="text-light bg-success">控制水平</div>
+        </div>
+
+
+    </div> -->
+    <!-- <div class="row gx-1 ">
+        <div class="col-3">
+            <div class="text-light bg-danger">控制水平gx-5</div>
+        </div>
+        <div class="col-9">
+            <div class="text-light bg-dark">控制水平gx-5</div>
+        </div>
+    </div>
+    <div>
+</div>
+<div> -->
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="b11156027期末-1.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="b11156027期末-2.html">地圖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="b11156027期末-3.html">角色介紹</a>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+    <div class="p-5 text-center border-bottom">
+        <div class="col-lg-6  mx-auto">
+        <img src="https://s.yimg.com/os/creatr-uploaded-images/2020-05/625dd690-9b74-11ea-bfe8-c3c556c2c55b" alt="">
+        <p class="h2" align="center">特戰英豪是一款多人線上第一人稱射擊遊戲，由知名遊戲開發公司開發而成。遊戲設定在現代戰場上，玩家可以扮演特種部隊成員或恐怖分子進行對戰。</p>
+        <p class="h2" align="center">在特戰英豪中，你將加入一個競技場，與其他玩家組成隊伍或獨自一人進行戰鬥。遊戲提供了各種各樣的地圖和戰鬥場景，包括城市街道、廢棄工廠和軍事設施等。每個地圖都有其獨特的設計和佈局，為玩家提供不同的策略和戰術選擇。</p>
+        <p class="h2" align="center">遊戲中有多個角色可供選擇，每個角色都有自己獨特的技能和武器裝備。玩家可以根據自己的喜好和遊戲需求選擇適合自己的角色，並與其他隊友協作，制定戰術和戰略，以取得勝利。遊戲強調團隊合作和戰術配合，玩家需要與隊友緊密合作，共同完成各種任務和目標。</p>
+        <button id="myButton" class="btn btn-primary btn-lg">查看更多</button>
+        <p id="displayText1" class="h2" style="display: none;">特戰英豪還提供了豐富的遊戲模式，包括團隊競技、生存模式、奪旗戰等。每種模式都有不同的遊戲規則和目標，玩家可以根據自己的喜好選擇參與。此外，遊戲還定期更新內容，包括新增地圖、角色和武器，以及修復漏洞和改進遊戲性能。</p>
+        <p id="displayText2" class="h2" style="display: none;">特戰英豪的畫面精美，遊戲操作流暢，音效逼真，為玩家帶來真實而緊張的戰鬥體驗。它也成為了競技電子競技比賽的重要項目之一，吸引了眾多玩家和觀眾的關注。</p>
+        <p id="displayText3" class="h2" style="display: none;">總而言之，特戰英豪是一款刺激的多人線上射擊遊戲，具有豐富的戰鬥內容和團隊合作要素。如果你喜歡緊張刺激的戰鬥，喜歡與其他玩家一起制定戰略和戰術，那麼特戰英豪將會是一個不錯的選擇。</p>
+    
+    <script>
+        var button = document.getElementById("myButton");
+        var displayText1 = document.getElementById("displayText1");
+        var displayText2 = document.getElementById("displayText2");
+        var displayText3 = document.getElementById("displayText3");
+    
+        button.addEventListener("click", function() {
+            displayText1.style.display = displayText1.style.display === "none" ? "block" : "none";
+            displayText2.style.display = displayText2.style.display === "none" ? "block" : "none";
+            displayText3.style.display = displayText3.style.display === "none" ? "block" : "none";
+        });
+        </script>
+</script>
+        </div>
+    </div>
+    </article>
+    <section>
+    <div class="p-5">
+        <div class="container">
+            <div class="row md-auto">
+            <div class="col-md-auto">
+                
+            </div>
+            <div class="col-md-auto">
+                <div class="text-light bg-success">
+                    
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="text-light bg-success">
+                
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="bg-dark text-white py-4 content-wrapper">
+        <div class="container text-center">
+
+        <ul class="list-inline">
+                <li class="list-inline-item">
+
+        <a href="https://www.facebook.com/VALORANTtw/"><i class="bi bi-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg></i></a>
+                
+
+        </li>
+
+        <li class="list-inline-item">
+
+        <a href="https://www.youtube.com/PlayValorant"><i class="bi bi-youtube"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+        </svg></i></a>
+                
+                </li>
+        </li>
+
+        <li class="list-inline-item">
+
+        <a href="https://www.instagram.com/valoranttw/"><i class="bi bi-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg></i></a>
+                
+
+        </li>
+
+        </ul>
+
+        <p class="mb-0">&copy; FOLLOW US</p>
+            
+
+        </div>
+
+        </footer>
+</body>
+</html>
